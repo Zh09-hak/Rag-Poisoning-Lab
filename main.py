@@ -50,7 +50,7 @@ STOPWORDS = {
 SETTINGS: Dict[str, Any] = {
     "provider": os.getenv("LLM_PROVIDER", "ollama").lower(),
     "ollama_model": os.getenv("OLLAMA_MODEL", "llama3.1"),
-    "groq_model": os.getenv("GROQ_MODEL", "llama-3.1-8b-instant"),
+    "groq_model": os.getenv("GROQ_MODEL", "qwen/qwen3.8-27b"),
     "temperature": float(os.getenv("LLM_TEMPERATURE", "0.7")),
     "eval_temperature": float(os.getenv("EVAL_TEMPERATURE", "0.0")),
     "eval_seed": int(os.getenv("EVAL_SEED", "42")),
@@ -1768,7 +1768,7 @@ input[type=range]{accent-color:var(--cyan);width:100%}
         <datalist id="model-list">
           <option value="llama3.1"></option>
           <option value="mistral"></option>
-          <option value="llama-3.1-8b-instant"></option>
+          <option value="qwen/qwen3.8-27b"></option>
           <option value="llama-3.3-70b-versatile"></option>
           <option value="openai/gpt-oss-20b"></option>
           <option value="openai/gpt-oss-120b"></option>
