@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+langgraph
+langchain-core
+langchain-ollama
+langchain-groq
+chromadb
+celery
+redis
+python-dotenv
+requests
